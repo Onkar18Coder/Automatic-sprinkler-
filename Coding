@@ -1,0 +1,32 @@
+()
+Serial.begin(9600);
+myserial.bece*1.0 in Appendix
+include ¡SoftwareSerial.h¿
+SoftwareSerial myserial(2,3);
+void setupgin(9600);
+pinMode(6, INPUT);
+pinMode(7, OUTPUT);
+//Serial.begin(9600);
+Serial.begin(9600);
+delay(100);
+Serial.print(”AT˚”);
+delay(500);
+Serial.print(”AT+CMGF=1˚”);
+delay(500);
+void loop()
+if(digitalRead(14)==HIGH)
+digitalWrite(4,HIGH);
+Serial.print(”AT+CMGS=7875211638¨ ˚ ”); ¨
+delay(100);
+Serial.print(”No Moisture˚”);
+Serial.print(”Motor ON”);
+Serial.write(26);
+delay(1000);
+else
+digitalWrite(4,LOW);
+Serial.print(”AT+CMGS=7875211638¨ ˚ ”); ¨
+delay(100);
+Serial.print(”Moisture present˚”);
+Serial.println(”Motor OFF”);
+Serial.write(26);
+delay(1000);
